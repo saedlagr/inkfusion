@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InkFusion | Signs & Wraps | Lakewood, NJ</title>
+    <meta name="description" content="Premium vehicle wraps, signs, printed wraps, color change wraps, boat wraps, and ATV/UTV graphics in Lakewood, New Jersey. Branding you can touch.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-ring">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <p class="loader-text">Loading Experience</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="Gemini_Generated_Image_al9f3zal9f3zal9f.png" alt="InkFusion Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#showcase">Our Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="https://www.instagram.com/inkfusionnj/" target="_blank" rel="noopener" class="nav-social" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="18" cy="6" r="1.5" fill="currentColor"/>
+                    </svg>
+                </a></li>
+                <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-menu-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#showcase">Our Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+            <li><a href="https://www.instagram.com/inkfusionnj/" target="_blank" rel="noopener" class="mobile-social">
+                <svg viewBox="0 0 24 24" fill="none" width="28" height="28">
+                    <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="18" cy="6" r="1.5" fill="currentColor"/>
+                </svg>
+                @inkfusionnj
+            </a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section with Animation -->
+    <section class="hero" id="hero">
+        <div class="hero-sticky">
+            <div class="hero-inner">
+                <div class="hero-text-side">
+                    <h1 class="hero-title">
+                        <span class="hero-title-line">Branding</span>
+                        <span class="hero-title-line accent">You Can Touch</span>
+                    </h1>
+                    <p class="hero-subtitle">Premium vehicle wraps, signs & graphics in Lakewood, NJ. Watch your vision come to life.</p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">Get a Quote</a>
+                        <a href="#showcase" class="btn btn-secondary">View Our Work</a>
+                    </div>
+                    <div class="hero-scroll-indicator">
+                        <span>Scroll to transform</span>
+                        <div class="scroll-arrow">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-animation-side">
+                    <div class="hero-animation-wrapper">
+                        <canvas id="scrollCanvas" width="1920" height="1080"></canvas>
+                        <div class="hero-progress">
+                            <div class="hero-progress-bar" id="frameProgressBar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What We Do</span>
+                <h2 class="section-title">Creative Branding<br>Solutions</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <rect x="6" y="16" width="36" height="20" rx="4" stroke="currentColor" stroke-width="2.5"/>
+                            <circle cx="14" cy="36" r="4" stroke="currentColor" stroke-width="2.5"/>
+                            <circle cx="34" cy="36" r="4" stroke="currentColor" stroke-width="2.5"/>
+                            <path d="M6 24H42" stroke="currentColor" stroke-width="2.5"/>
+                        </svg>
+                    </div>
+                    <h3>Printed Wraps</h3>
+                    <p>Full custom graphics that showcase your brand with vibrant, high-resolution imagery.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <path d="M24 6L24 42" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M6 24H42" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                            <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2.5"/>
+                            <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2.5"/>
+                        </svg>
+                    </div>
+                    <h3>Color Change Wraps</h3>
+                    <p>Transform your vehicle's appearance with premium vinyl in any color imaginable.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <path d="M8 36C8 36 12 28 24 28C36 28 40 36 40 36" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M8 36V20C8 16 10 12 16 12H32C38 12 40 16 40 20V36" stroke="currentColor" stroke-width="2.5"/>
+                            <path d="M16 20H32" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Boat Wraps</h3>
+                    <p>Marine-grade wraps designed to withstand water, sun, and salt exposure.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <rect x="10" y="20" width="28" height="16" rx="3" stroke="currentColor" stroke-width="2.5"/>
+                            <circle cx="16" cy="36" r="4" stroke="currentColor" stroke-width="2.5"/>
+                            <circle cx="32" cy="36" r="4" stroke="currentColor" stroke-width="2.5"/>
+                            <path d="M10 28L6 28L6 20L10 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M38 28L42 28L42 20L38 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>ATV & UTV Graphics</h3>
+                    <p>Rugged graphics kits built for off-road adventures and extreme conditions.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="8" width="32" height="24" rx="2" stroke="currentColor" stroke-width="2.5"/>
+                            <path d="M8 32V38C8 39.1046 8.89543 40 10 40H38C39.1046 40 40 39.1046 40 38V32" stroke="currentColor" stroke-width="2.5"/>
+                            <path d="M16 16H32" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M16 22H28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Signs & Banners</h3>
+                    <p>Indoor and outdoor signage solutions for storefronts, events, and trade shows.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <path d="M24 8L30 20H42L32 28L36 40L24 32L12 40L16 28L6 20H18L24 8Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Fleet Branding</h3>
+                    <p>Consistent brand identity across your entire fleet of vehicles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section class="showcase" id="showcase">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Portfolio</span>
+                <h2 class="section-title">See the<br>Transformation</h2>
+            </div>
+            <div class="showcase-content">
+                <div class="before-after-container">
+                    <div class="before-after-wrapper">
+                        <div class="before-image">
+                            <img src="fixed%20frames/ezgif-frame-001.jpg" alt="Before - Plain white van">
+                            <span class="image-label">Before</span>
+                        </div>
+                        <div class="after-image">
+                            <img src="fixed%20frames/ezgif-frame-041.jpg" alt="After - Fully wrapped van">
+                            <span class="image-label">After</span>
+                        </div>
+                        <div class="before-after-slider" id="beforeAfterSlider">
+                            <div class="slider-handle">
+                                <div class="slider-arrows">
+                                    <svg viewBox="0 0 24 24" fill="none">
+                                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <svg viewBox="0 0 24 24" fill="none">
+                                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="showcase-caption">OWL Mechanical — Complete fleet branding with full vehicle wrap</p>
+                </div>
+                <div class="showcase-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="5">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">Day Turnaround</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-label">About Us</span>
+                    <h2 class="section-title">Crafted in<br>Lakewood, NJ</h2>
+                    <p class="about-description">
+                        InkFusion was founded with a simple mission: to help businesses stand out in a crowded marketplace. We combine cutting-edge printing technology with meticulous craftsmanship to deliver wraps that don't just look good—they last.
+                    </p>
+                    <p class="about-description">
+                        Every project receives our full attention, from initial concept to final installation. We work with premium materials and state-of-the-art equipment to ensure your brand makes the impact it deserves.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <span>Premium 3M & Avery Materials</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <span>Certified Installers</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <span>Custom Design Services</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <span>Satisfaction Guaranteed</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-image-wrapper">
+                        <img src="fixed%20frames/ezgif-frame-041.jpg" alt="InkFusion completed wrap showcase">
+                        <div class="about-image-accent"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <span class="section-label">Get Started</span>
+                    <h2 class="section-title">Let's Create<br>Something Bold</h2>
+                    <p class="contact-description">
+                        Ready to transform your vehicle or brand? Reach out today for a free consultation and quote.
+                    </p>
+                    <div class="contact-details">
+                        <a href="tel:7328067330" class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M22 16.92V19.92C22 20.4704 21.7893 20.9996 21.4142 21.3947C21.0391 21.7898 20.5304 22.0205 20 22.04C16.5 22.36 13.12 21.38 10.34 19.38C7.74 17.54 5.66 15.1 4.5 12.2C3.5 9.58 2.92 6.64 3.02 3.66C3.04 3.13 3.27 2.62 3.66 2.24C4.05 1.86 4.58 1.64 5.13 1.62H8.13C9.1 1.61 9.93 2.31 10.07 3.26C10.18 4.06 10.38 4.84 10.66 5.59C10.94 6.34 10.82 7.18 10.34 7.82L9 9.42C10.07 11.57 11.89 13.45 14 14.58L15.56 13.22C16.18 12.72 17.02 12.58 17.77 12.86C18.52 13.14 19.3 13.34 20.1 13.45C21.07 13.59 21.79 14.44 21.78 15.43L22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">(732) 806-7330</span>
+                            </div>
+                        </a>
+                        <a href="https://wa.me/19085388196" class="contact-item" target="_blank" rel="noopener">
+                            <div class="contact-icon whatsapp">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" fill="currentColor"/>
+                                    <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18c-1.657 0-3.216-.5-4.51-1.36l-.32-.192-2.87.852.852-2.87-.192-.32A7.963 7.963 0 014 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8z" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">WhatsApp</span>
+                                <span class="contact-value">(908) 538-8196</span>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/inkfusionnj/" class="contact-item" target="_blank" rel="noopener">
+                            <div class="contact-icon instagram">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="18" cy="6" r="1.5" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Instagram</span>
+                                <span class="contact-value">@inkfusionnj</span>
+                            </div>
+                        </a>
+                        <a href="mailto:mattm@inkfusionwraps.com" class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">mattm@inkfusionwraps.com</span>
+                            </div>
+                        </a>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 5.02944 7.02944 1 12 1C16.9706 1 21 5.02944 21 10Z" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">1 Havenwood Court, Suite 501<br>Lakewood, NJ 08701</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(000) 000-0000">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="printed-wrap">Printed Wraps</option>
+                                <option value="color-change">Color Change Wraps</option>
+                                <option value="boat-wrap">Boat Wraps</option>
+                                <option value="atv-utv">ATV & UTV Graphics</option>
+                                <option value="signs">Signs & Banners</option>
+                                <option value="fleet">Fleet Branding</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Tell us about your project</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Describe your vehicle, desired look, and any specific requirements..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="Gemini_Generated_Image_al9f3zal9f3zal9f.png" alt="InkFusion Logo" class="footer-logo">
+                    <p class="footer-tagline">Branding you can touch.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Printed Wraps</a></li>
+                            <li><a href="#services">Color Change Wraps</a></li>
+                            <li><a href="#services">Boat Wraps</a></li>
+                            <li><a href="#services">ATV & UTV Graphics</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#showcase">Our Work</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="tel:7328067330">(732) 806-7330</a></li>
+                            <li><a href="mailto:mattm@inkfusionwraps.com">mattm@inkfusionwraps.com</a></li>
+                            <li>Lakewood, NJ 08701</li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Follow Us</h4>
+                        <ul>
+                            <li><a href="https://www.instagram.com/inkfusionnj/" target="_blank" rel="noopener" class="footer-social-link">
+                                <svg viewBox="0 0 24 24" fill="none" width="18" height="18">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="18" cy="6" r="1.5" fill="currentColor"/>
+                                </svg>
+                                @inkfusionnj
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 InkFusion. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
