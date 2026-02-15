@@ -441,7 +441,7 @@ class StatsCounter {
 class FadeInAnimation {
     constructor() {
         this.elements = document.querySelectorAll(
-            '.service-card, .pillar-card, .process-step, .pricing-card, .bundle-card, .about-content > *, .contact-content > *, .portfolio-item'
+            '.service-card, .pillar-card, .process-step, .pricing-card, .bundle-card, .testimonial-card, .about-content > *, .contact-content > *, .portfolio-item'
         );
         this.init();
     }
@@ -513,10 +513,67 @@ class ContactForm {
 
     init() {
         this.form.addEventListener('submit', (e) => this.onSubmit(e));
+
+        this.form.querySelectorAll('input, select, textarea').forEach(field => {
+            field.addEventListener('blur', () => this.validateField(field));
+            field.addEventListener('input', () => this.clearError(field));
+        });
+    }
+
+    validateField(field) {
+        this.clearError(field);
+
+        if (field.required && !field.value.trim()) {
+            this.showFieldError(field, 'This field is required');
+            return false;
+        }
+
+        if (field.type === 'email' && field.value.trim()) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(field.value.trim())) {
+                this.showFieldError(field, 'Please enter a valid email address');
+                return false;
+            }
+        }
+
+        if (field.type === 'tel' && field.value.trim()) {
+            const phoneClean = field.value.replace(/[\s\-\(\)\.]/g, '');
+            if (phoneClean.length < 10 || !/^\+?\d+$/.test(phoneClean)) {
+                this.showFieldError(field, 'Please enter a valid phone number');
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    showFieldError(field, message) {
+        field.classList.add('error');
+        const errorEl = document.createElement('span');
+        errorEl.className = 'form-error';
+        errorEl.textContent = message;
+        field.parentElement.appendChild(errorEl);
+    }
+
+    clearError(field) {
+        field.classList.remove('error');
+        const existing = field.parentElement.querySelector('.form-error');
+        if (existing) existing.remove();
     }
 
     onSubmit(e) {
         e.preventDefault();
+
+        const fields = this.form.querySelectorAll('input, select, textarea');
+        let isValid = true;
+
+        fields.forEach(field => {
+            if (!this.validateField(field)) {
+                isValid = false;
+            }
+        });
+
+        if (!isValid) return;
 
         const formData = new FormData(this.form);
         const data = Object.fromEntries(formData);
